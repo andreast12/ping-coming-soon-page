@@ -1,0 +1,144 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ====================
+	Global
+================== */
+:root {
+	--blue: hsl(223, 87%, 63%);
+	--pale-blue: hsl(223, 100%, 88%);
+	--light-red: hsl(354, 100%, 66%);
+	--gray: hsl(0, 0%, 59%);
+	--dark-blue: hsl(209, 33%, 12%);
+
+	--body-font-family: 'Libre Franklin', sans-serif;
+	--body-font-size: 20px;
+}
+
+body {
+	font-family: var(--body-font-family);
+	font-size: var(--body-font-size);
+	margin-top: 10vmax;
+}
+
+.container {
+	width: 90%;
+	max-width: 500px;
+	margin: auto;
+}
+
+
+/* ====================
+	Header
+================== */
+header {
+	text-align: center;
+}
+
+header h2 {
+	margin: 2rem 0 1rem;
+}
+
+.light-text {
+	font-weight: 300;
+	color: var(--gray);
+}
+
+input {
+	width: 100%;
+	max-width: 400px;
+	font-size: 1rem;
+	padding: 1em 2em;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+}
+
+input::placeholder {
+  color: var(--pale-blue);
+}
+
+:-ms-input-placeholder { 
+  color: var(--pale-blue);
+}
+
+::-ms-input-placeholder { 
+  color: var(--pale-blue);
+}
+
+input[type="text"] {
+	margin: 2rem 0 .9rem; 
+	border: 1px solid var(--pale-blue);
+}
+
+.alert {
+	font-size: 1rem;
+	margin-bottom: 2rem;
+	color: red;
+}
+
+.d-none {
+	display: none;
+}
+
+input[type="submit"] {
+	background: var(--blue);
+	color: white;
+	box-shadow: 0 3px 15px var(--blue);
+}
+
+/* ====================
+	Main
+================== */
+main {
+	margin-top: 4rem;
+	color: var(--gray);
+}
+
+main img {
+	width: 100%;
+}
+
+.footer {
+	margin-top: 12rem;
+	text-align: center;
+}
+
+.soc-med-icons {
+	display: flex;
+	justify-content: center;
+}
+
+.soc-med-icons a {
+	border: 1px solid var(--gray);
+	border-radius: 50%;
+	width: 2.7rem;
+	height: 2.7rem;
+	margin: 0 1rem;
+	position: relative;
+	transition: .1s;
+}
+
+.soc-med-icons i {
+	font-size: 1.5rem;
+	color: var(--blue);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.soc-med-icons a:hover {
+	transform: scale(1.2);
+}
+
+.copyright {
+	margin-top: 2.5rem;
+}
+
+.attribution {
+	margin-top: 10vmax;
+}
