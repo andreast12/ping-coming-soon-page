@@ -91,7 +91,7 @@ input[type="text"] {
 input[type="submit"] {
 	background: var(--blue);
 	color: white;
-	box-shadow: 0 3px 15px var(--blue);
+	box-shadow: 0 3px 10px var(--blue);
 }
 
 /* ====================
@@ -123,7 +123,6 @@ main img {
 	height: 2.7rem;
 	margin: 0 1rem;
 	position: relative;
-	transition: .1s;
 }
 
 .soc-med-icons i {
@@ -141,4 +140,82 @@ main img {
 
 .attribution {
 	margin-top: 10vmax;
+}
+
+
+
+/* ====================
+	Desktop Version
+=================== */
+@media screen and (min-width: 992px) {
+	/* ====================
+		Global
+	================== */
+	body {
+		margin-top: 5vmax;
+	}
+
+	.container {
+		width: 80%;
+		max-width: 700px;
+	}
+
+
+	/* ====================
+		Header
+	================== */
+	header h2 {
+		font-size: 2.5rem;
+	}
+
+
+	/* ====================
+		Main
+	================== */
+	form {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+
+	input {
+		max-width: none;
+	}
+
+	input[type="text"] {
+		margin: 0;
+	}
+
+	input[type="submit"] {
+		padding: 0;
+		width: 90%;
+		justify-self: end;
+		cursor: pointer;
+	}
+
+	input[type="submit"]:hover {
+		background: hsla(223, 87%, 63%, 90%);
+	}
+
+	.alert {
+		grid-row: 2 / 3;
+		text-align: left;
+		margin: .5rem 2rem 0;
+	}
+
+	.soc-med-icons a,
+	.soc-med-icons i {
+		transition: .2s;
+	}
+
+	.soc-med-icons a:hover {
+		background: var(--blue);
+	}
+
+	.soc-med-icons a:hover i {
+		color: white;
+	}
+
+	.attribution {
+		margin-top: 5vmax;
+	}
 }
