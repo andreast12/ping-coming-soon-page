@@ -24,9 +24,11 @@
       <img src="images/logo.svg" alt="ping" class="logo">
       <h2><span class="light-text">We are launching</span> soon!</h2>
       <p>Subscribe and get notified</p>
-      <input type="text" placeholder="Your email address...">
-      <p class="alert d-none">Please provide a valid email address</p>
-      <input type="submit" value="Notify Me">
+      <form id="subscribeForm">
+        <input type="text" id="emailInput" placeholder="Your email address...">
+        <p class="alert d-none" id="alert"></p>
+        <input type="submit" id="submitBtn" value="Notify Me">  
+      </form>
     </header>
     
     <main>
